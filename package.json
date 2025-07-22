@@ -1,0 +1,22 @@
+{
+  "name": "minidesktopapp",
+  "version": "1.0.0",
+  "description": "This project is about to create a mini desktop app for my girlfriend's birthday and our 3rd anniversary.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FRAmyZ010/miniDesktopApp.git"
+  },
+  "author": "FRAmyZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FRAmyZ010/miniDesktopApp/issues"
+  },
+  "homepage": "https://github.com/FRAmyZ010/miniDesktopApp#readme",
+  "devDependencies": {
+    "electron": "^37.2.3"
+  }
+}
