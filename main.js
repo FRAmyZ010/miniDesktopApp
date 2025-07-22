@@ -1,5 +1,6 @@
 function add(first,second){
 
     const answer = first + second;
-    return answer;
+    const divide = answer / 2 ;
+    return divide;
 }
