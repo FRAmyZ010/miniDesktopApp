@@ -3,3 +3,7 @@
     --creme: #d2cdb9;
     --white-creme: #f5f3ec;
 }
+
+body{
+    background-color: var(--matcha);
+}
