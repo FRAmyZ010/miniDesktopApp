@@ -1,3 +1,16 @@
+# ไม่เอาโฟลเดอร์ node_modules ที่ npm สร้างขึ้น
+node_modules/
+
+
+
+# โฟลเดอร์ output
+dist/
+build/
+
+# Mac/Windows specific (optional)
+.DS_Store
+Thumbs.db
+
 # Logs
 logs
 *.log
