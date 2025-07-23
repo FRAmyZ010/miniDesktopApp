@@ -21,3 +21,13 @@ body{
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.first-page .next-button{
+    color:var(--matcha);
+    background-color:var(--creme);
+    padding:5px 10px;
+    border-radius: 20%;
+    box-shadow: none;
+    border: none;
+
+}
