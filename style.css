@@ -7,7 +7,17 @@
 body{
     background-color: var(--matcha);
 }
-h1.center-text{
-    top:50%;
-    bottom:50%;
+.center-text {
+
+  display: flex;
+  flex-direction: column;     /* เรียงจากบนลงล่าง */
+  align-items: center;        /* จัดแนวนอนให้ลูกอยู่ตรงกลาง */
+  justify-content: center;    /* จัดแนวตั้งให้ลูกอยู่ตรงกลาง (เฉพาะถ้ามีความสูง) */
+  height: 100vh;              /* ให้ div สูงเต็มจอเพื่อดูผลเต็ม ๆ */
+
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

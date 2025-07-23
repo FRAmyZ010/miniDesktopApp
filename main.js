@@ -3,8 +3,8 @@ const { app, BrowserWindow } = require('electron');
 // ฟังก์ชันสำหรับสร้างหน้าต่าง
 function createWindow() {
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 500,
+    height: 500,
     webPreferences: {
       nodeIntegration: true
     }
