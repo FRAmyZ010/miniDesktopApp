@@ -26,17 +26,26 @@ body{
   transform: translate(-50%, -50%);
 }
 
-.first-page .next-button{
+.welcome-text{
+    color: var(--white-creme);
+    font-size: 25px;
+
+}
+
+.first-page .next-button{   
     color:var(--dark-matcha);
     background-color:var(--white-creme);
     padding:5px 10px;
     border:5px solid var(--dark-matcha);
     box-shadow: none;
 
+    transition: transform 0.5s linear;
+
 }
 
 .first-page .next-button:hover{
-    scale:1.2;
+    transform: scale(1.1);
+    font-weight: bold;
 }
 
 
