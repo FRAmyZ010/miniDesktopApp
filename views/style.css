@@ -5,12 +5,26 @@
     --white-creme: #f5f3ec;
 }
 
+
+
+
+
+
 body{
 
     font-family: 'VT323', monospace;
     background-color: var(--matcha);
 
 }
+
+
+
+
+
+
+
+
+
 .center-text {
 
   display: flex;
