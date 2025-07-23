@@ -7,3 +7,7 @@
 body{
     background-color: var(--matcha);
 }
+h1.center-text{
+    top:50%;
+    bottom:50%;
+}
