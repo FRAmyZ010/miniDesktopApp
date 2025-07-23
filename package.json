@@ -2,7 +2,7 @@
   "name": "minidesktopapp",
   "version": "1.0.0",
   "description": "This project is about to create a mini desktop app for my girlfriend's birthday and our 3rd anniversary.",
-  "main": "main.js",
+  "main": "js/main.js",
   "scripts": {
     "start": "electron ."
   },

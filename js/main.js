@@ -10,7 +10,7 @@ function createWindow() {
     }
   });
 
-  win.loadFile('index.html'); // โหลด HTML เข้าไปในหน้าต่าง
+  win.loadFile('views/index.html'); // โหลด HTML เข้าไปในหน้าต่าง
 }
 
 app.whenReady().then(() => {
