@@ -1,23 +1,21 @@
-:root{
-    --matcha: #92a378;
-    --dark-matcha:#728d49;
-    --creme: #d2cdb9;
-    --white-creme: #f5f3ec;
-}
+    :root{
+        --matcha: #92a378;
+        --dark-matcha:#728d49;
+        --creme: #d2cdb9;
+        --white-creme: #f5f3ec;
+    }
 
 
 
 
 
 
-body{
+    body{
 
-    font-family: 'VT323', monospace;
-    background-color: var(--matcha);
+        font-family: 'VT323', monospace;
+        background-color: var(--white-creme);
 
-}
-
-
+    }
 
 
 
@@ -25,42 +23,80 @@ body{
 
 
 
-.center-text {
-
-  display: flex;
-  flex-direction: column;     /* เรียงจากบนลงล่าง */
-  align-items: center;        /* จัดแนวนอนให้ลูกอยู่ตรงกลาง */
-  justify-content: center;    /* จัดแนวตั้งให้ลูกอยู่ตรงกลาง (เฉพาะถ้ามีความสูง) */
-  height: 100vh;              /* ให้ div สูงเต็มจอเพื่อดูผลเต็ม ๆ */
 
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+    .center-text {
 
-.welcome-text{
-    color: var(--white-creme);
-    font-size: 25px;
+    display: flex;
+    flex-direction: column;     /* เรียงจากบนลงล่าง */
+    align-items: center;        /* จัดแนวนอนให้ลูกอยู่ตรงกลาง */
+    justify-content: center;    /* จัดแนวตั้งให้ลูกอยู่ตรงกลาง (เฉพาะถ้ามีความสูง) */
+    height: 100vh;              /* ให้ div สูงเต็มจอเพื่อดูผลเต็ม ๆ */
 
-}
 
-.first-page .next-button{   
-    color:var(--dark-matcha);
-    background-color:var(--white-creme);
-    padding:5px 10px;
-    border:5px solid var(--dark-matcha);
-    box-shadow: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
 
-    transition: transform 0.5s linear;
+    .welcome-text{
+        color: var(--dark-matcha);
+        font-size: 25px;
+        
+        animation-name: blink-welcome-text;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
 
-}
+    }
 
-.first-page .next-button:hover{
-    transform: scale(1.1);
-    font-weight: bold;
-}
+    .first-page .next-button{   
+        color:var(--matcha);
+        font-weight: bold;
+        background-color:var(--white-creme);
+        padding:5px 10px;
+        border:5px solid var(--dark-matcha);
+        box-shadow: none;
+
+        transition: transform 0.5s linear;
+
+        animation: blink-button 2s infinite;
+
+    }
+
+    .first-page .next-button:hover{
+        transform: scale(1.1);
+    }
+
+
+
+    /* ANIMATION */
+    @keyframes blink-welcome-text{
+        0%{
+            opacity: 100%;
+        }
+        50%{
+            opacity:0%;
+        }
+        60%{
+            opacity: 0%;
+        }
+        100%{
+            opacity: 100%;
+        }
+    }
+
+    @keyframes blink-button{
+        0%{
+            transform:scale(1);
+        }
+        50%{
+            transform:scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
 
 
 
