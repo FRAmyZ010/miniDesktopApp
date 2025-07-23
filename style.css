@@ -1,11 +1,15 @@
 :root{
     --matcha: #92a378;
+    --dark-matcha:#728d49;
     --creme: #d2cdb9;
     --white-creme: #f5f3ec;
 }
 
 body{
+
+    font-family: 'VT323', monospace;
     background-color: var(--matcha);
+
 }
 .center-text {
 
@@ -23,11 +27,17 @@ body{
 }
 
 .first-page .next-button{
-    color:var(--matcha);
-    background-color:var(--creme);
+    color:var(--dark-matcha);
+    background-color:var(--white-creme);
     padding:5px 10px;
-    border-radius: 20%;
+    border:5px solid var(--dark-matcha);
     box-shadow: none;
-    border: none;
 
 }
+
+.first-page .next-button:hover{
+    scale:1.2;
+}
+
+
+
