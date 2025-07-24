@@ -1,0 +1,115 @@
+    :root{
+
+        --matcha: #92a378;
+        --dark-matcha:#728d49;
+        --creme: #d2cdb9;
+        --white-creme: #f5f3ec;
+
+        --milk-pink:#FFEAEA;
+        --light-pink:#F5CBCB;
+        --slate-blue:#748DAE;
+        --powder-blue:#9ECAD6;
+
+    }
+
+    @font-face {
+  font-family: 'ZF#2ndPixelus';
+  src: url('ZF#2ndPixelus.ttf') format('truetype');
+    }
+
+
+
+
+
+
+
+
+    body{
+
+        font-family: 'ZF#2ndPixelus', monospace;
+        background-color: var(--white-creme);
+
+    }
+
+
+
+
+
+
+
+
+
+    .center-text {
+
+    display: flex;
+    flex-direction: column;     /* เรียงจากบนลงล่าง */
+    align-items: center;        /* จัดแนวนอนให้ลูกอยู่ตรงกลาง */
+    justify-content: center;    /* จัดแนวตั้งให้ลูกอยู่ตรงกลาง (เฉพาะถ้ามีความสูง) */
+    height: 100vh;              /* ให้ div สูงเต็มจอเพื่อดูผลเต็ม ๆ */
+
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+    .welcome-text{
+        color: var(--dark-matcha);
+        font-size: 25px;
+        
+        animation-name: blink-welcome-text;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+
+    }
+
+    .first-page{
+        display: flex;
+        width: 400px;
+        height: 400px;
+    }
+
+    .first-page .next-button{   
+        color:var(--matcha);
+        font-weight: bold;
+        background-color:var(--white-creme);
+        padding:5px 10px;
+        border:5px solid var(--dark-matcha);
+        box-shadow: none;
+
+        transition: transform 0.5s linear;
+
+        animation: rotate-button 3s infinite;
+
+    }
+
+    .first-page .next-button:hover{
+        transform: scale(1.1);
+    }
+
+
+
+    /* ANIMATION */
+
+
+    
+    @keyframes blink-welcome-text{
+        0%{opacity: 100%;}
+        50%{opacity:0%;}
+        60%{opacity: 0%;}
+        100%{opacity: 100%;}
+    }
+
+    @keyframes rotate-button{
+        0%{transform:rotate(0deg);}
+        15%{transform:rotate(5deg);}
+        25%{transform:rotate(-10deg);}
+        50%{transform: rotate(10deg);}
+        75%{transform:rotate(-10deg)}
+        85%{transform:rotate(5deg);}
+        100%{transform: rotate(0deg);}
+    }
+
+
+

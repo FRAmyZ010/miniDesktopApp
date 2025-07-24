@@ -14,7 +14,7 @@
 
     @font-face {
   font-family: 'ZF#2ndPixelus';
-  src: url('/public/font/ZF#2ndPixelus.ttf') format('truetype');
+  src: url('font/ZF#2ndPixelus.ttf') format('truetype');
     }
 
 
