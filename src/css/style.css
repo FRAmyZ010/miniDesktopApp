@@ -13,8 +13,8 @@
     }
 
     @font-face {
-  font-family: 'ZF#2ndPixelus';
-  src: url('font/ZF#2ndPixelus.ttf') format('truetype');
+  font-family: 'myFont';
+  src: url('font/myFont.ttf') format('truetype');
     }
 
 
@@ -29,9 +29,13 @@
 
     body{
 
-        font-family: 'ZF#2ndPixelus', monospace;
+        font-family: 'myFont', monospace;
         background-color: var(--white-creme);
 
+    }
+
+    button, input, select, textarea{
+        font-family: 'myFont', monospace;
     }
 
 
@@ -57,15 +61,26 @@
     transform: translate(-50%, -50%);
     }
 
+
     .welcome-text{
-        color: var(--dark-matcha);
-        font-size: 25px;
-        
-        animation-name: blink-welcome-text;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
+        color: var(--milk-pink);
+        background-color: var(--slate-blue);
+        padding: 5px;
+        font-size: 30px;
+
+        transform: translateY(-48px);
+
+        z-index: 15;
 
     }
+
+    .miniping{
+        z-index: 10;
+
+        animation: miniPing-dance 5s infinite;
+    }
+
+
 
     .first-page{
         display: flex;
@@ -73,8 +88,9 @@
         height: 400px;
     }
 
-    .first-page .next-button{   
+    .next-button{   
         color:var(--matcha);
+        font-size: 25px;
         font-weight: bold;
         background-color:var(--white-creme);
         padding:5px 10px;
@@ -83,11 +99,13 @@
 
         transition: transform 0.5s linear;
 
-        animation: rotate-button 3s infinite;
+        position: relative;
+        top: -54px;
+
 
     }
 
-    .first-page .next-button:hover{
+    .next-button:hover{
         transform: scale(1.1);
     }
 
@@ -108,46 +126,33 @@
         z-index: 99;
     }
 
+    .windowBar h2{
+        padding: 0px 15px 0px 0px;
+        color: var(--milk-pink);
+    }
+
     .closeBtn{
         width: 32px;
         height: 32px;
     }
 
-    .heart{
-        animation: fallingHeart 8s linear infinite;
-        transform: translateY(-350px);
-    }
+    
+    
 
 
     /* ANIMATION */
 
 
-    
-    @keyframes blink-welcome-text{
-        0%{opacity: 100%;}
-        50%{opacity:0%;}
-        60%{opacity: 0%;}
-        100%{opacity: 100%;}
-    }
 
-    @keyframes rotate-button{
-        0%{transform:rotate(0deg);}
-        15%{transform:rotate(5deg);}
-        25%{transform:rotate(-10deg);}
-        50%{transform: rotate(10deg);}
-        75%{transform:rotate(-10deg)}
-        85%{transform:rotate(5deg);}
+
+    @keyframes miniPing-dance{
+        0%{transform: rotate(0deg);}
+        25%{transform: rotate(-10deg);}
+        50%{transform: rotate(8deg);}
+        75%{transform: rotate(-10deg);}
         100%{transform: rotate(0deg);}
     }
 
-    @keyframes fallingHeart{
-        0%{
-            transform: translateY(-350px);
-        }
-        100%{
-            transform: translateY(400px);
-        }
-    }
 
 
 

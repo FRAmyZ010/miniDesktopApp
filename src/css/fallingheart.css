@@ -1,0 +1,72 @@
+.heart1{
+        animation: fallingHeart1 8s linear infinite;
+        transform: translateY(-350px);
+    }
+    .heart2{
+        animation: fallingHeart2 8s 0.5 linear infinite;
+        transform: translate(-50px,-360px); 
+    }.heart3{
+        animation: fallingHeart4 8s 0s linear infinite;
+        transform: translate(-150px,-370px); 
+    }
+    .heart4{
+        animation: fallingHeart3 8s 1s linear infinite;
+        transform: translate(180px,-380px); 
+    }
+    .heart5{
+        animation: fallingHeart2 8s 0s linear infinite;
+        transform: translate(100,-390px); 
+    }
+    .heart6{
+        animation: fallingHeart1 12s 3s linear infinite;
+        transform: translate(-140px,-400px); 
+    }
+    .heart7{
+        animation: fallingHeart3 15s 3s linear infinite;
+        transform: translate(-70px,-4100px); 
+    }
+    .heart8{
+        animation: fallingHeart4 8s 2.5s linear infinite;
+        transform: translate(140px,-420px); 
+    }
+    .heart9{
+        animation: fallingHeart2 12s 3s linear infinite;
+        transform: translate(-30px,-430px); 
+    }
+    .heart10{
+        animation: fallingHeart3 8s 1.5s linear infinite;
+        transform: translate(14px,-440px); 
+    }
+    .heart11{
+        animation: fallingHeart4 8s 1.8s linear infinite;
+        transform: translate(150px,-450px); 
+    }
+    .heart12{
+        animation: fallingHeart4 8s 0.4s linear infinite;
+        transform: translate(-50px,-460px); 
+    }
+
+
+
+
+
+    @keyframes fallingHeart1{
+        100%{
+            transform: translateY(600px) translateX(50px);
+        }
+    }
+    @keyframes fallingHeart2{
+        100%{
+            transform: translateY(600px) translateX(-80px);
+        }
+    }
+    @keyframes fallingHeart3{
+        100%{
+            transform: translateY(600px) translateX(-80px);
+        }
+    }
+    @keyframes fallingHeart4{
+        100%{
+            transform: translateY(600px) translateX(80px);
+        }
+    }
