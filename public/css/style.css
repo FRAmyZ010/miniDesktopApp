@@ -64,6 +64,12 @@
 
     }
 
+    .first-page{
+        display: flex;
+        width: 400px;
+        height: 400px;
+    }
+
     .first-page .next-button{   
         color:var(--matcha);
         font-weight: bold;
