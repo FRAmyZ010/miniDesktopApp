@@ -1,9 +1,23 @@
     :root{
+
         --matcha: #92a378;
         --dark-matcha:#728d49;
         --creme: #d2cdb9;
         --white-creme: #f5f3ec;
+
+        --milk-pink:#FFEAEA;
+        --light-pink:#F5CBCB;
+        --slate-blue:#748DAE;
+        --powder-blue:#9ECAD6;
+
     }
+
+    @font-face {
+  font-family: 'ZF#2ndPixelus';
+  src: url('/public/font/ZF#2ndPixelus.ttf') format('truetype');
+    }
+
+
 
 
 
@@ -12,7 +26,7 @@
 
     body{
 
-        font-family: 'VT323', monospace;
+        font-family: 'ZF#2ndPixelus', monospace;
         background-color: var(--white-creme);
 
     }
