@@ -1,0 +1,24 @@
+:root {
+  --matcha: #92a378;
+  --dark-matcha: #728d49;
+  --creme: #d2cdb9;
+  --white-creme: #f5f3ec;
+
+  --milk-pink: #ffeaea;
+  --light-pink: #f5cbcb;
+  --slate-blue: #748dae;
+  --powder-blue: #9ecad6;
+
+  --blush-rose: #fadadd; /* ชมพูตุ่นๆ หวานนุ่ม */
+  --baby-lilac: #dcc6e0; /* ม่วงอ่อน ละมุน */
+  --peach-fizz: #ffd8be; /* ส้มพีชอ่อน เพิ่มความสดใส */
+  --cloud-gray: #e3e3e3; /* เทาอ่อน คลีนๆ */
+  --ice-mint: #d0f0e0; /* เขียวมินต์เย็นๆ เข้ากับฟ้า/ชมพู */
+
+  --light-pink: #f5cbcb; /* สีเดิม */
+  --medium-pink: #e6a5a5; /* เข้มขึ้นนิดนึง */
+  --rose-pink: #d98686; /* ชมพูตุ่นแบบผู้ใหญ่ */
+  --deep-rose: #c46d6d; /* เข้มแบบโรแมนติก */
+  --dusty-rose: #b85858; /* ชมพูฝุ่นๆ ดูคลาสสิก */
+  --vintage-rose: #a64747; /* ชมพูเข้มแบบวินเทจ */
+}

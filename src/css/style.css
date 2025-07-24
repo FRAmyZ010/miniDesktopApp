@@ -1,158 +1,137 @@
-    :root{
-
-        --matcha: #92a378;
-        --dark-matcha:#728d49;
-        --creme: #d2cdb9;
-        --white-creme: #f5f3ec;
-
-        --milk-pink:#FFEAEA;
-        --light-pink:#F5CBCB;
-        --slate-blue:#748DAE;
-        --powder-blue:#9ECAD6;
-
-    }
-
-    @font-face {
-  font-family: 'myFont';
-  src: url('font/myFont.ttf') format('truetype');
-    }
 
 
+@font-face {
+  font-family: "myFont";
+  src: url("font/myFont.ttf") 
+  format("truetype");
+}
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "myFont", monospace;
+  background-color: var(--white-creme);
+}
 
-    html,body{
-        margin: 0;
-        padding: 0;
-    }
+button,
+input,
+select,
+textarea {
+  font-family: "myFont", monospace;
+}
 
+.windowBar {
+  position: absolute;
 
-    body{
+  width: 590px;
+  height: 50px;
+  background-color: var(--slate-blue);
+  padding: 0px 10px 0px 0px;
 
-        font-family: 'myFont', monospace;
-        background-color: var(--white-creme);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 
-    }
+  z-index: 99;
+}
 
-    button, input, select, textarea{
-        font-family: 'myFont', monospace;
-    }
+.windowBar h2 {
+  padding: 0px 15px 0px 0px;
+  color: var(--milk-pink);
+}
 
+.closeBtn {
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
 
+.center-text {
+  display: flex;
+  flex-direction: column; /* เรียงจากบนลงล่าง */
+  align-items: center; /* จัดแนวนอนให้ลูกอยู่ตรงกลาง */
+  justify-content: center; /* จัดแนวตั้งให้ลูกอยู่ตรงกลาง (เฉพาะถ้ามีความสูง) */
+  height: 100vh; /* ให้ div สูงเต็มจอเพื่อดูผลเต็ม ๆ */
 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.welcome-text {
+  color: var(--peach-fizz);
+  background-color: var(--slate-blue);
+  padding: 5px;
+  font-size: 30px;
 
+  transform: translateY(-48px);
 
+  z-index: 15;
+}
 
+.first-page h2 {
+  color: var(--slate-blue);
+  font-size: 40px;
 
+  display: flex;
+  align-items: center;
 
-    .center-text {
+  position: absolute;
+  top: -10px;
+}
 
-    display: flex;
-    flex-direction: column;     /* เรียงจากบนลงล่าง */
-    align-items: center;        /* จัดแนวนอนให้ลูกอยู่ตรงกลาง */
-    justify-content: center;    /* จัดแนวตั้งให้ลูกอยู่ตรงกลาง (เฉพาะถ้ามีความสูง) */
-    height: 100vh;              /* ให้ div สูงเต็มจอเพื่อดูผลเต็ม ๆ */
+.miniping {
+  z-index: 10;
 
+  animation: miniPing-dance 5s infinite;
+}
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    }
+.first-page {
+  display: flex;
+  width: 400px;
+  height: 400px;
+}
 
+.next-button {
+  color: var(--slate-blue);
+  font-size: 25px;
+  font-weight: bold;
+  background-color: var(--white-creme);
+  padding: 5px 10px;
+  border: 5px solid var(--light-pink);
+  box-shadow: none;
 
-    .welcome-text{
-        color: var(--milk-pink);
-        background-color: var(--slate-blue);
-        padding: 5px;
-        font-size: 30px;
+  transition: transform 0.5s linear;
 
-        transform: translateY(-48px);
+  position: relative;
+  top: -54px;
+}
 
-        z-index: 15;
+.next-button:hover {
+  transform: scale(1.1);
+}
 
-    }
+/* ANIMATION */
 
-    .miniping{
-        z-index: 10;
-
-        animation: miniPing-dance 5s infinite;
-    }
-
-
-
-    .first-page{
-        display: flex;
-        width: 400px;
-        height: 400px;
-    }
-
-    .next-button{   
-        color:var(--matcha);
-        font-size: 25px;
-        font-weight: bold;
-        background-color:var(--white-creme);
-        padding:5px 10px;
-        border:5px solid var(--dark-matcha);
-        box-shadow: none;
-
-        transition: transform 0.5s linear;
-
-        position: relative;
-        top: -54px;
-
-
-    }
-
-    .next-button:hover{
-        transform: scale(1.1);
-    }
-
-    .windowBar{
-
-        position: absolute;
-
-        
-        width: 590px;
-        height: 50px;
-        background-color: var(--slate-blue);
-        padding: 0px 10px 0px 0px;
-
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-
-        z-index: 99;
-    }
-
-    .windowBar h2{
-        padding: 0px 15px 0px 0px;
-        color: var(--milk-pink);
-    }
-
-    .closeBtn{
-        width: 32px;
-        height: 32px;
-    }
-
-    
-    
-
-
-    /* ANIMATION */
-
-
-
-
-    @keyframes miniPing-dance{
-        0%{transform: rotate(0deg);}
-        25%{transform: rotate(-10deg);}
-        50%{transform: rotate(8deg);}
-        75%{transform: rotate(-10deg);}
-        100%{transform: rotate(0deg);}
-    }
-
-
-
-
+@keyframes miniPing-dance {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

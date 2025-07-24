@@ -5,7 +5,7 @@ const ipc = ipcMain
 function createWindow () {
   const win = new BrowserWindow({
     width: 600,
-    height: 600,
+    height:600,
     titleBarStyle:"hidden",
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
